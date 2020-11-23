@@ -1,0 +1,27 @@
+PODS:
+  - SnapKit (4.2.0)
+  - SYCustomCamera (0.1.0):
+    - SnapKit
+    - TOCropViewController
+  - TOCropViewController (2.5.5)
+
+DEPENDENCIES:
+  - SYCustomCamera (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+    - TOCropViewController
+
+EXTERNAL SOURCES:
+  SYCustomCamera:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SYCustomCamera: d337a25fb8cac9a71b988e3e02bd1806b1554002
+  TOCropViewController: da59f531f8ac8a94ef6d6c0fc34009350f9e8bfe
+
+PODFILE CHECKSUM: 25ad6f7f505c064e3e8bb9183e10cc6b1a639b1a
+
+COCOAPODS: 1.10.0

@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SYCustomCamera'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of SYCustomCamera.'
+  s.version          = '0.1.1'
+  s.summary          = 'SYCustomCamera is demo'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -24,19 +24,20 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/bsytt/SYCustomCamera'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'bsytt' => 'pomyven@gmail.com' }
+  s.author           = { 'bsytt' => '15893398117@163.com' }
   s.source           = { :git => 'https://github.com/bsytt/SYCustomCamera.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
-  s.source_files = 'SYCustomCamera/Classes/**/*'
-  
+  s.source_files = 'SYCustomCamera/Classes/Custom/*.{swift}','SYCustomCamera/Classes/Custom/View/*.{h,swift}','SYCustomCamera/Classes/Custom/Model/*.{swift}','SYCustomCamera/Classes/Custom/Crop/CropViewController/*.{h,swift}'
+  s.resource = "SYCustomCamera/Classes/Custom/View/SYCustomCameraImageShowItemCell.xib"
   # s.resource_bundles = {
   #   'SYCustomCamera' => ['SYCustomCamera/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  #s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'SnapKit'
+  s.dependency 'TOCropViewController'
 end
