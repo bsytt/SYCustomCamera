@@ -22,7 +22,7 @@ pod 'SYCustomCamera'
 
 ## Author
 
-bsytt, pomyven@gmail.com
+bsytt, 15893398117@163.com
 
 ## License
 
