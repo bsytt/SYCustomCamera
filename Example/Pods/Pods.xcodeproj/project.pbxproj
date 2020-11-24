@@ -91,15 +91,6 @@
 		B61C51B518EDB0861FBC28E630940297 /* SYCustomCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD9B0162B52F8F4AE0361FC3F3A53F50 /* SYCustomCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BAFF927958391F934ABF90E502959B19 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C33D7DBBD37CA583691F60D00B05D /* ConstraintPriorityTarget.swift */; };
 		BCE5C7E1256C96690030F364 /* SYCustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE5C7E0256C96690030F364 /* SYCustomCameraView.swift */; };
-		BCE5C864256CA2910030F364 /* takephoto@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE5C85B256CA2910030F364 /* takephoto@2x.png */; };
-		BCE5C865256CA2910030F364 /* takephoto@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE5C85C256CA2910030F364 /* takephoto@3x.png */; };
-		BCE5C866256CA2910030F364 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = BCE5C85D256CA2910030F364 /* .gitkeep */; };
-		BCE5C867256CA2910030F364 /* sanguang@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE5C85E256CA2910030F364 /* sanguang@2x.png */; };
-		BCE5C868256CA2910030F364 /* sanguang@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE5C85F256CA2910030F364 /* sanguang@3x.png */; };
-		BCE5C869256CA2910030F364 /* close_Sanguang@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE5C860256CA2910030F364 /* close_Sanguang@3x.png */; };
-		BCE5C86A256CA2910030F364 /* icon_fankui@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE5C861256CA2910030F364 /* icon_fankui@2x.png */; };
-		BCE5C86B256CA2910030F364 /* icon_fankui@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE5C862256CA2910030F364 /* icon_fankui@3x.png */; };
-		BCE5C86C256CA2910030F364 /* close_Sanguang@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCE5C863256CA2910030F364 /* close_Sanguang@2x.png */; };
 		BF5A206D4FD234402202971398C88626 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7161DABFF62B6DFFFF92150EBD9CAA0 /* ConstraintLayoutGuide.swift */; };
 		C03D4E14627160E32DF6BD5749C4EBBC /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0D548E546260631FB34B65FC00DF6983 /* en.lproj */; };
 		C4D77BC8CE9A6D3864F236FEE55AE864 /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 65E9685408BC35A04DC1E267DBAA08D4 /* tr.lproj */; };
@@ -273,15 +264,6 @@
 		B71EB436E69FC706984689FACB1D85F9 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		B919CB18F154EE1E1AD11F96F07118EE /* CropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CropViewController.h; sourceTree = "<group>"; };
 		BCE5C7E0256C96690030F364 /* SYCustomCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYCustomCameraView.swift; sourceTree = "<group>"; };
-		BCE5C85B256CA2910030F364 /* takephoto@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "takephoto@2x.png"; sourceTree = "<group>"; };
-		BCE5C85C256CA2910030F364 /* takephoto@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "takephoto@3x.png"; sourceTree = "<group>"; };
-		BCE5C85D256CA2910030F364 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		BCE5C85E256CA2910030F364 /* sanguang@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sanguang@2x.png"; sourceTree = "<group>"; };
-		BCE5C85F256CA2910030F364 /* sanguang@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sanguang@3x.png"; sourceTree = "<group>"; };
-		BCE5C860256CA2910030F364 /* close_Sanguang@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close_Sanguang@3x.png"; sourceTree = "<group>"; };
-		BCE5C861256CA2910030F364 /* icon_fankui@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_fankui@2x.png"; sourceTree = "<group>"; };
-		BCE5C862256CA2910030F364 /* icon_fankui@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_fankui@3x.png"; sourceTree = "<group>"; };
-		BCE5C863256CA2910030F364 /* close_Sanguang@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close_Sanguang@2x.png"; sourceTree = "<group>"; };
 		BD9B0162B52F8F4AE0361FC3F3A53F50 /* SYCustomCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SYCustomCamera-umbrella.h"; sourceTree = "<group>"; };
 		BF11EAA074E92374045C7B77398F935E /* Pods-SYCustomCamera_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYCustomCamera_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C24712B1172D28023050E53F1CA2335F /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
@@ -597,23 +579,6 @@
 			path = "Target Support Files/Pods-SYCustomCamera_Example";
 			sourceTree = "<group>";
 		};
-		BCE5C85A256CA2910030F364 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				BCE5C85B256CA2910030F364 /* takephoto@2x.png */,
-				BCE5C85C256CA2910030F364 /* takephoto@3x.png */,
-				BCE5C85D256CA2910030F364 /* .gitkeep */,
-				BCE5C85E256CA2910030F364 /* sanguang@2x.png */,
-				BCE5C85F256CA2910030F364 /* sanguang@3x.png */,
-				BCE5C860256CA2910030F364 /* close_Sanguang@3x.png */,
-				BCE5C861256CA2910030F364 /* icon_fankui@2x.png */,
-				BCE5C862256CA2910030F364 /* icon_fankui@3x.png */,
-				BCE5C863256CA2910030F364 /* close_Sanguang@2x.png */,
-			);
-			name = Assets;
-			path = SYCustomCamera/Assets;
-			sourceTree = "<group>";
-		};
 		C3575A181A9889AF0E4096F82902B4F7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -664,7 +629,6 @@
 		EB912DC59DDA7EFDCC80DF8D97B93D4B /* SYCustomCamera */ = {
 			isa = PBXGroup;
 			children = (
-				BCE5C85A256CA2910030F364 /* Assets */,
 				E3F0018D6E5305E2D8B06A0CF2232869 /* Config.swift */,
 				759676B73CE40288230B23A77823BB53 /* SYCustomShowBigImageViewController.swift */,
 				19ACC399CDB580F7317A054C5B540190 /* UIViewExtension.swift */,
@@ -907,15 +871,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCE5C869256CA2910030F364 /* close_Sanguang@3x.png in Resources */,
-				BCE5C867256CA2910030F364 /* sanguang@2x.png in Resources */,
-				BCE5C868256CA2910030F364 /* sanguang@3x.png in Resources */,
-				BCE5C86C256CA2910030F364 /* close_Sanguang@2x.png in Resources */,
-				BCE5C86A256CA2910030F364 /* icon_fankui@2x.png in Resources */,
-				BCE5C866256CA2910030F364 /* .gitkeep in Resources */,
-				BCE5C864256CA2910030F364 /* takephoto@2x.png in Resources */,
-				BCE5C86B256CA2910030F364 /* icon_fankui@3x.png in Resources */,
-				BCE5C865256CA2910030F364 /* takephoto@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
