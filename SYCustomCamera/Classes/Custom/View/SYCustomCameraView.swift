@@ -122,6 +122,11 @@ open class SYCustomCameraView: UIView {
             self.cameraPicker.takePicture()
         }else {
             print("最多可以拍\(maxCount!)张")
+            let alertController = UIAlertController(title: "提示", message: "最多只可以拍\(dataSource.count)张", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "确定", style: .default, handler: { (action) in
+                
+            }))
+            self.viewController()?.present(alertController, animated: true, completion: nil)
         }
     }
     
