@@ -74,7 +74,6 @@
 		8E926CFF9B70C4531B0C3CE067EA637F /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2594965AE3DA8356473364AE144D81 /* ConstraintMakerPriortizable.swift */; };
 		8F60E37B75408CFA2107D78927276074 /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABBAA89D08707968BA3E05BC72D058A /* TOCropView.m */; };
 		9158928D3F2D19DC2F07400AAB84DAE1 /* TOActivityCroppedImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B5E12890858174A7813671FCBF632EA /* TOActivityCroppedImageProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93534D130B51C6EC2E644F610883729B /* SYCustomCameraImageShowItemCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = E32A465EE2AAA0FC0F2A7EFC638CA51F /* SYCustomCameraImageShowItemCell.xib */; };
 		9CFB919800D77388E761686D8C937BF9 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ACC399CDB580F7317A054C5B540190 /* UIViewExtension.swift */; };
 		9DD50462182A64DC20D99AFD1C23EA18 /* CropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = B919CB18F154EE1E1AD11F96F07118EE /* CropViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E3CB2042B4AEA2962C69B570354D335 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C666BAD19505E8BC04217E8286246BE4 /* ConstraintMultiplierTarget.swift */; };
@@ -279,7 +278,6 @@
 		D9767385277752CB03B3602AD53C0622 /* TOCropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewController.h; path = "Objective-C/TOCropViewController/TOCropViewController.h"; sourceTree = "<group>"; };
 		E25AF4C1E5B14088159D919C5E6C84CF /* UIImage+CropRotate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CropRotate.m"; path = "Objective-C/TOCropViewController/Categories/UIImage+CropRotate.m"; sourceTree = "<group>"; };
 		E319C1D4C87970741BD0C1B223CE1BB5 /* fi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fi.lproj; path = "Objective-C/TOCropViewController/Resources/fi.lproj"; sourceTree = "<group>"; };
-		E32A465EE2AAA0FC0F2A7EFC638CA51F /* SYCustomCameraImageShowItemCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SYCustomCameraImageShowItemCell.xib; sourceTree = "<group>"; };
 		E3F0018D6E5305E2D8B06A0CF2232869 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = SYCustomCamera/Classes/Custom/Config.swift; sourceTree = "<group>"; };
 		E47CCBAD3982DA694E15A696F2B9A342 /* SYCustomCameraImageShowItemCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SYCustomCameraImageShowItemCell.swift; sourceTree = "<group>"; };
 		E4D6DB5694E6976D0CFE08DD4D1BAD88 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
@@ -415,7 +413,6 @@
 			children = (
 				BCE5C7E0256C96690030F364 /* SYCustomCameraView.swift */,
 				E47CCBAD3982DA694E15A696F2B9A342 /* SYCustomCameraImageShowItemCell.swift */,
-				E32A465EE2AAA0FC0F2A7EFC638CA51F /* SYCustomCameraImageShowItemCell.xib */,
 				619E975EF8739633234F98909CF11E11 /* SYImageBrowserView.swift */,
 			);
 			name = View;
@@ -960,7 +957,6 @@
 				0390A1F1BFBF016026DBC10CF0DAD0CA /* CropViewController.swift in Sources */,
 				DBFD30466F30E296470F317DEB12C0BE /* SYCustomCamera-dummy.m in Sources */,
 				30F30E6A41363063F26667CED83B6A42 /* SYCustomCameraImageShowItemCell.swift in Sources */,
-				93534D130B51C6EC2E644F610883729B /* SYCustomCameraImageShowItemCell.xib in Sources */,
 				78497E59DC783DCCD16D4554DB644895 /* SYCustomCameraModel.swift in Sources */,
 				4D84DBFFB69603EE1F678CDF180DA7ED /* SYCustomShowBigImageViewController.swift in Sources */,
 				7A77EA064011A7B9BE3D7265EE674FE6 /* SYImageBrowserView.swift in Sources */,

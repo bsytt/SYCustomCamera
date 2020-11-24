@@ -9,9 +9,9 @@
 import UIKit
 import SnapKit
 
-typealias SYCustomCameraBlock = ([UIImage])->()
+public typealias SYCustomCameraBlock = ([UIImage])->()
 
-class SYCustomCameraView: UIView {
+open class SYCustomCameraView: UIView {
 
     private var cameraPicker : UIImagePickerController!
     private let wHImage = 90
@@ -21,12 +21,12 @@ class SYCustomCameraView: UIView {
     private var maxCount : Int!
     
     var dataSource = [UIImage]()
-    var chooseBlock : SYCustomCameraBlock?
+    public var chooseBlock : SYCustomCameraBlock?
     
     let showVC = SYCustomShowBigImageViewController()
 
     var isDismiss : Bool = false
-    init(frame: CGRect,cameraPicker:UIImagePickerController,maxCount:Int=3) {
+    public init(frame: CGRect,cameraPicker:UIImagePickerController,maxCount:Int=3) {
         super.init(frame: frame)
         self.cameraPicker = cameraPicker
         self.maxCount = maxCount
@@ -36,7 +36,7 @@ class SYCustomCameraView: UIView {
         NotificationCenter.default.addObserver(self, selector: #selector(showExtras(noti:)), name: NSNotification.Name(rawValue: "showExtras"), object: nil)
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -208,10 +208,17 @@ class SYCustomCameraView: UIView {
             }
          }
     }
-    
+    func getImage(imageName:String) ->UIImage? {
+        let bundle = Bundle(for: self.classForCoder)
+        let path = bundle.path(forResource: "SYCustomCamera", ofType: "bundle")
+        let bundles = Bundle(path: path!)
+        let image = UIImage(named: imageName, in: bundles, compatibleWith: nil)
+        return image
+    }
     lazy var takePicBtn: UIButton = {
         let btn = UIButton(type: .custom)
-        btn.setImage(UIImage(named: "takePic"), for: .normal)
+        let image = getImage(imageName: "takephoto")
+        btn.setImage(image, for: .normal)
         btn.addTarget(self, action: #selector(takePicBtnClick), for: .touchUpInside)
         return btn
     }()
@@ -232,7 +239,8 @@ class SYCustomCameraView: UIView {
     
     lazy var changeBtn: UIButton = {
         let btn = UIButton(type: .custom)
-        btn.setImage(UIImage(named: "icon_fankui"), for: .normal)
+        let image = getImage(imageName: "icon_fankui")
+        btn.setImage(image, for: .normal)
         btn.addTarget(self, action: #selector(changeBtnClick), for: .touchUpInside)
         return btn
     }()
@@ -244,7 +252,7 @@ class SYCustomCameraView: UIView {
         layout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.backgroundColor = .black
-        collectionView.register(UINib(nibName: "SYCustomCameraImageShowItemCell", bundle: nil), forCellWithReuseIdentifier: "SYCustomCameraImageShowItemCell")
+        collectionView.register(SYCustomCameraImageShowItemCell.classForCoder(), forCellWithReuseIdentifier: "SYCustomCameraImageShowItemCell")
         collectionView.layer.cornerRadius = 5
 //        collectionView.isPagingEnabled = true
         collectionView.delegate = self
@@ -254,7 +262,7 @@ class SYCustomCameraView: UIView {
 }
 
 extension SYCustomCameraView : UIImagePickerControllerDelegate,UINavigationControllerDelegate {
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         print("获得照片============= \(info)")
         let image : UIImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         //显示设置的照片
@@ -266,17 +274,17 @@ extension SYCustomCameraView : UIImagePickerControllerDelegate,UINavigationContr
 
 extension SYCustomCameraView:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
 
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataSource.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SYCustomCameraImageShowItemCell", for: indexPath) as! SYCustomCameraImageShowItemCell
         cell.imgV.image = dataSource[indexPath.item]
         return cell
     }
 
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         showVC.dataSource = dataSource
         showVC.index = indexPath.item
         showVC.view.isHidden = false
@@ -293,13 +301,13 @@ extension SYCustomCameraView:UICollectionViewDelegate,UICollectionViewDataSource
         }
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: wHImage, height: wHImage)
     }
 }
 
 extension SYCustomCameraView:UIGestureRecognizerDelegate{
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         if (gestureRecognizer.view!.isKind(of: UIScrollView.classForCoder())) {
             return false
         }

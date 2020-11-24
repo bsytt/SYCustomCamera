@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SYCustomCamera'
-  s.version          = '0.1.6'
+  s.version          = '0.1.8'
   s.summary          = 'SYCustomCamera is CustomCamera'
 
 # This description is used to generate tags and improve search results.
@@ -30,21 +30,23 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-#  s.source_files = 'SYCustomCamera/Classes/**/*.{swift}'
+  s.source_files = 'SYCustomCamera/Classes/**/*.{swift}'
 #  s.source_files = 'SYCustomCamera/Classes/**/**/*.{h,m,swift}'
 
   s.subspec 'View' do |ss|
-        s.source_files = 'SYCustomCamera/Classes/Custom/View/*.{h,m,swift}'
+      ss.source_files = 'SYCustomCamera/Classes/Custom/View/*.{h,m,swift}'
   end
   s.subspec 'Model' do |ss|
-        s.source_files = 'SYCustomCamera/Classes/Custom/Model/*.{h,m,swift}'
+      ss.source_files = 'SYCustomCamera/Classes/Custom/Model/*.{h,m,swift}'
+  end
+  s.subspec 'CropViewController' do |ss|
+      ss.source_files = 'SYCustomCamera/Classes/Custom/Crop/CropViewController/*.{h,m,swift}'
   end
   s.resource = "SYCustomCamera/Classes/**/**/*.{xib}"
    s.resource_bundles = {
      'SYCustomCamera' => ['SYCustomCamera/Assets/*.png']
    }
-#  s. = true
-  #s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   
   s.dependency 'SnapKit'
