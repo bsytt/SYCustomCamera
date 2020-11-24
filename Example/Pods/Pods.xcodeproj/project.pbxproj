@@ -51,7 +51,6 @@
 		4FA5A6AA9FE1CE380EE4D343784FAD26 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71EB436E69FC706984689FACB1D85F9 /* ConstraintInsetTarget.swift */; };
 		4FB707D88F4EB206BAB685E60200D715 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F14BC11978C14244E6403DABF381CB3 /* ConstraintPriority.swift */; };
 		526AB8AAE9EC58C5BA06AD35B8D4FCF0 /* ms.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 25FD1F0CEB596B03DEF324CAC3A25A07 /* ms.lproj */; };
-		5B2551225F25BE449F4BE0D4D9DADDA4 /* SYCustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BE10E1AD00AE773A2E2EA168D89DA0 /* SYCustomCameraView.swift */; };
 		5C0DB194A6E450919F9B98F12546EA15 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BE80C607CF1C3E6B55B06A2CC1189E /* ConstraintItem.swift */; };
 		5DF9C31334C05DAFDDF103FCD6443EC3 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F99CF3DD666F3C166BE4D09A7A0340D /* ConstraintMaker.swift */; };
 		601061DF26FBFC8C21FDB5967BC010FC /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 34CCC592EDBD2DC5C676C1C5DAB99DAA /* de.lproj */; };
@@ -91,6 +90,7 @@
 		B58A209C525BC1F83828C3518D417DBB /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 98AD4B64185607E53D4B6C8EDB272DF3 /* SnapKit-dummy.m */; };
 		B61C51B518EDB0861FBC28E630940297 /* SYCustomCamera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BD9B0162B52F8F4AE0361FC3F3A53F50 /* SYCustomCamera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BAFF927958391F934ABF90E502959B19 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C33D7DBBD37CA583691F60D00B05D /* ConstraintPriorityTarget.swift */; };
+		BCE5C7E1256C96690030F364 /* SYCustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE5C7E0256C96690030F364 /* SYCustomCameraView.swift */; };
 		BF5A206D4FD234402202971398C88626 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7161DABFF62B6DFFFF92150EBD9CAA0 /* ConstraintLayoutGuide.swift */; };
 		C03D4E14627160E32DF6BD5749C4EBBC /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0D548E546260631FB34B65FC00DF6983 /* en.lproj */; };
 		C4D77BC8CE9A6D3864F236FEE55AE864 /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 65E9685408BC35A04DC1E267DBAA08D4 /* tr.lproj */; };
@@ -165,25 +165,25 @@
 		021BB6E688E0E825F54C946E566ACDA8 /* Pods-SYCustomCamera_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SYCustomCamera_Example-dummy.m"; sourceTree = "<group>"; };
 		0263DCAA80399E7470E0F84500C12C24 /* TOCropViewControllerTransitioning.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewControllerTransitioning.m; path = "Objective-C/TOCropViewController/Models/TOCropViewControllerTransitioning.m"; sourceTree = "<group>"; };
 		049379E151BA1471BA65A6FC23F7D6A9 /* TOCropScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropScrollView.h; path = "Objective-C/TOCropViewController/Views/TOCropScrollView.h"; sourceTree = "<group>"; };
-		06E8674A8212B8880833DBD3803669E7 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "Objective-C/TOCropViewController/Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
+		06E8674A8212B8880833DBD3803669E7 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hans.lproj"; path = "Objective-C/TOCropViewController/Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
 		07CB61B0C223253DADBB5C2EB9C1F68B /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
 		07CC3487EC210D0B33A175051E9D5F39 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
-		0805431C079D9FA0C7A3F61F064CB811 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.lproj; path = "Objective-C/TOCropViewController/Resources/ru.lproj"; sourceTree = "<group>"; };
+		0805431C079D9FA0C7A3F61F064CB811 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ru.lproj; path = "Objective-C/TOCropViewController/Resources/ru.lproj"; sourceTree = "<group>"; };
 		0B5E12890858174A7813671FCBF632EA /* TOActivityCroppedImageProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOActivityCroppedImageProvider.h; path = "Objective-C/TOCropViewController/Models/TOActivityCroppedImageProvider.h"; sourceTree = "<group>"; };
 		0C8DDD230DE719F43B82EB613A2B3CBC /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
 		0CB33885D44B9F57FB53E45619E9A0A1 /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
-		0D548E546260631FB34B65FC00DF6983 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = "Objective-C/TOCropViewController/Resources/en.lproj"; sourceTree = "<group>"; };
+		0D548E546260631FB34B65FC00DF6983 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = "Objective-C/TOCropViewController/Resources/en.lproj"; sourceTree = "<group>"; };
 		0D7591FBE556981ED57AA14BE950892E /* TOCropOverlayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropOverlayView.m; path = "Objective-C/TOCropViewController/Views/TOCropOverlayView.m"; sourceTree = "<group>"; };
 		0EF1036FF64B292E695D1230B106D040 /* Pods-SYCustomCamera_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SYCustomCamera_Example-frameworks.sh"; sourceTree = "<group>"; };
 		144CF9C861FF6A7401195E5B6BED62B9 /* Pods-SYCustomCamera_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SYCustomCamera_Example.modulemap"; sourceTree = "<group>"; };
 		179A110349D6221573AC7F4D398489C4 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
 		18DB09E9DD10D6C9343962272206A8F2 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
 		19ACC399CDB580F7317A054C5B540190 /* UIViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = SYCustomCamera/Classes/Custom/UIViewExtension.swift; sourceTree = "<group>"; };
-		1ADBA1E55BDB3B92A88C51916562A4E1 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = "Objective-C/TOCropViewController/Resources/fr.lproj"; sourceTree = "<group>"; };
+		1ADBA1E55BDB3B92A88C51916562A4E1 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fr.lproj; path = "Objective-C/TOCropViewController/Resources/fr.lproj"; sourceTree = "<group>"; };
 		1C62A5CC3C0B28F624CAA2CA3F54FD39 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
 		1D8A9282F41B5B640D5AB8D05B5E44D0 /* TOActivityCroppedImageProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOActivityCroppedImageProvider.m; path = "Objective-C/TOCropViewController/Models/TOActivityCroppedImageProvider.m"; sourceTree = "<group>"; };
 		241B547B88A3D2B5FB381E394854B801 /* TOCropViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TOCropViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		25FD1F0CEB596B03DEF324CAC3A25A07 /* ms.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ms.lproj; path = "Objective-C/TOCropViewController/Resources/ms.lproj"; sourceTree = "<group>"; };
+		25FD1F0CEB596B03DEF324CAC3A25A07 /* ms.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ms.lproj; path = "Objective-C/TOCropViewController/Resources/ms.lproj"; sourceTree = "<group>"; };
 		27DE9FFA39CC297A2D943E8FB8FA1860 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
 		2B11C5E23CD165456178E54DA04C4BB7 /* TOCropOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropOverlayView.h; path = "Objective-C/TOCropViewController/Views/TOCropOverlayView.h"; sourceTree = "<group>"; };
 		2B1A110241BC1FEA3C579035AB0C6D4F /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
@@ -191,78 +191,79 @@
 		2E82152CB32C3E26494229429DBC05CB /* Pods-SYCustomCamera_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SYCustomCamera_Example-Info.plist"; sourceTree = "<group>"; };
 		2F2594965AE3DA8356473364AE144D81 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
 		3152B2C168FF2CB05F1C3839C0F23A24 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
-		344A419EB2F2EC773C97115F94ACC8FC /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = hu.lproj; path = "Objective-C/TOCropViewController/Resources/hu.lproj"; sourceTree = "<group>"; };
-		34CCC592EDBD2DC5C676C1C5DAB99DAA /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = "Objective-C/TOCropViewController/Resources/de.lproj"; sourceTree = "<group>"; };
+		344A419EB2F2EC773C97115F94ACC8FC /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = hu.lproj; path = "Objective-C/TOCropViewController/Resources/hu.lproj"; sourceTree = "<group>"; };
+		34CCC592EDBD2DC5C676C1C5DAB99DAA /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = de.lproj; path = "Objective-C/TOCropViewController/Resources/de.lproj"; sourceTree = "<group>"; };
 		389D0322B916A9FCD2A597F0B5CCB372 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
-		38AAE75B7D82969736080035CCAC1CE8 /* fa.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fa.lproj; path = "Objective-C/TOCropViewController/Resources/fa.lproj"; sourceTree = "<group>"; };
-		38F5FA51AA250B03D8CA5F3300F05717 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = it.lproj; path = "Objective-C/TOCropViewController/Resources/it.lproj"; sourceTree = "<group>"; };
+		38AAE75B7D82969736080035CCAC1CE8 /* fa.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fa.lproj; path = "Objective-C/TOCropViewController/Resources/fa.lproj"; sourceTree = "<group>"; };
+		38F5FA51AA250B03D8CA5F3300F05717 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = it.lproj; path = "Objective-C/TOCropViewController/Resources/it.lproj"; sourceTree = "<group>"; };
 		3ADCCB4F45CB0CDF86032CC9E4DD2B5F /* TOCropViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TOCropViewController-Info.plist"; sourceTree = "<group>"; };
 		3C86FD350152E0A0EDA659474D627BB1 /* TOCropToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropToolbar.h; path = "Objective-C/TOCropViewController/Views/TOCropToolbar.h"; sourceTree = "<group>"; };
-		3E5C88F1BFF96660B503EEB988AF8DCD /* Pods_SYCustomCamera_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SYCustomCamera_Example.framework; path = "Pods-SYCustomCamera_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E5C88F1BFF96660B503EEB988AF8DCD /* Pods_SYCustomCamera_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SYCustomCamera_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F14BC11978C14244E6403DABF381CB3 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
 		4223740138EF8374F3DE4205BF9890B1 /* TOCroppedImageAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCroppedImageAttributes.h; path = "Objective-C/TOCropViewController/Models/TOCroppedImageAttributes.h"; sourceTree = "<group>"; };
-		4678C43279A094174F66F050612DF001 /* ro.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ro.lproj; path = "Objective-C/TOCropViewController/Resources/ro.lproj"; sourceTree = "<group>"; };
+		4678C43279A094174F66F050612DF001 /* ro.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ro.lproj; path = "Objective-C/TOCropViewController/Resources/ro.lproj"; sourceTree = "<group>"; };
 		4D661AF85228DD41DC198D1002ABBF7C /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
 		4E3DC70E31CEA6A5796C6B47EC84A3D3 /* SYCustomCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SYCustomCamera.release.xcconfig; sourceTree = "<group>"; };
 		4E702D79EB6F3A15627EAAFD0746D79A /* SYCustomCameraModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SYCustomCameraModel.swift; sourceTree = "<group>"; };
 		51A439CFDC2270326E73CA9F8E1E66CC /* TOCroppedImageAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCroppedImageAttributes.m; path = "Objective-C/TOCropViewController/Models/TOCroppedImageAttributes.m"; sourceTree = "<group>"; };
 		544CA2496A721697608971DB5A6F9D03 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
-		54E48D5ED9FCF6F6C21A0A5ACB8630A6 /* SYCustomCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SYCustomCamera.framework; path = SYCustomCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E48D5ED9FCF6F6C21A0A5ACB8630A6 /* SYCustomCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SYCustomCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		570E5930F9D8A253BB815F9B41286F6B /* ResourceBundle-TOCropViewControllerBundle-TOCropViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TOCropViewControllerBundle-TOCropViewController-Info.plist"; sourceTree = "<group>"; };
 		578FC41E4A98BF15B72AA46D37F2D5BE /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
 		5A01F5ADD318601D2E756BFE1058EBCE /* TOCropViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TOCropViewController.release.xcconfig; sourceTree = "<group>"; };
-		5A9471FCC455AA528D34F6E0A00A4480 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "Objective-C/TOCropViewController/Resources/zh-Hant.lproj"; sourceTree = "<group>"; };
+		5A9471FCC455AA528D34F6E0A00A4480 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hant.lproj"; path = "Objective-C/TOCropViewController/Resources/zh-Hant.lproj"; sourceTree = "<group>"; };
 		5EC2D05C39AC05F621B71286DE649A44 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
 		5F78E40BE585E3A1D1E6604C064A2158 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
 		5F99CF3DD666F3C166BE4D09A7A0340D /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
 		614B83DD2B3131172B59DACFF24A1DD1 /* SYCustomCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SYCustomCamera-dummy.m"; sourceTree = "<group>"; };
 		619E975EF8739633234F98909CF11E11 /* SYImageBrowserView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SYImageBrowserView.swift; sourceTree = "<group>"; };
 		6274466F9769744AE09E192DB03408AD /* Pods-SYCustomCamera_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SYCustomCamera_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		63939708361A51CBE4F4A440A323A5B5 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = "Objective-C/TOCropViewController/Resources/es.lproj"; sourceTree = "<group>"; };
+		63939708361A51CBE4F4A440A323A5B5 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = es.lproj; path = "Objective-C/TOCropViewController/Resources/es.lproj"; sourceTree = "<group>"; };
 		64679FB77B573DF237B6E7E121F0A9D4 /* Pods-SYCustomCamera_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SYCustomCamera_Example-umbrella.h"; sourceTree = "<group>"; };
-		65E9685408BC35A04DC1E267DBAA08D4 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = tr.lproj; path = "Objective-C/TOCropViewController/Resources/tr.lproj"; sourceTree = "<group>"; };
-		67262F7C6750F19D00A3B3C71E13CC09 /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = vi.lproj; path = "Objective-C/TOCropViewController/Resources/vi.lproj"; sourceTree = "<group>"; };
+		65E9685408BC35A04DC1E267DBAA08D4 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = tr.lproj; path = "Objective-C/TOCropViewController/Resources/tr.lproj"; sourceTree = "<group>"; };
+		67262F7C6750F19D00A3B3C71E13CC09 /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = vi.lproj; path = "Objective-C/TOCropViewController/Resources/vi.lproj"; sourceTree = "<group>"; };
 		688376AD6B8E6F2D9419D7053046E9D2 /* TOCropViewControllerTransitioning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewControllerTransitioning.h; path = "Objective-C/TOCropViewController/Models/TOCropViewControllerTransitioning.h"; sourceTree = "<group>"; };
-		6CA5C70A5A020A48914FCF7C10550E1E /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = Base.lproj; path = "Objective-C/TOCropViewController/Resources/Base.lproj"; sourceTree = "<group>"; };
+		6CA5C70A5A020A48914FCF7C10550E1E /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = Base.lproj; path = "Objective-C/TOCropViewController/Resources/Base.lproj"; sourceTree = "<group>"; };
 		6F098082A1DC2E777EEBDE96C13F5ABF /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
-		6FEDD64A1E867CED1D5CEB7F4DAC8591 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = "Objective-C/TOCropViewController/Resources/ja.lproj"; sourceTree = "<group>"; };
+		6FEDD64A1E867CED1D5CEB7F4DAC8591 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ja.lproj; path = "Objective-C/TOCropViewController/Resources/ja.lproj"; sourceTree = "<group>"; };
 		709735354D48D766C554BBB6F28F6E66 /* SYCustomCamera-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SYCustomCamera-prefix.pch"; sourceTree = "<group>"; };
 		7177ED6F3B7E062C37A22BA000FA5F36 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
-		72884A1A4D3ED09284416886EA36FCF5 /* SYCustomCamera.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SYCustomCamera.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		72884A1A4D3ED09284416886EA36FCF5 /* SYCustomCamera.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SYCustomCamera.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		74DED77C287BBE1699A95E78EAB62D70 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
 		759676B73CE40288230B23A77823BB53 /* SYCustomShowBigImageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SYCustomShowBigImageViewController.swift; path = SYCustomCamera/Classes/Custom/SYCustomShowBigImageViewController.swift; sourceTree = "<group>"; };
-		75B65DE30AA77815217D7834246463DC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		75B65DE30AA77815217D7834246463DC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7635460327FFCEEBBF7D6AD96B8E2334 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
-		76922D3C781E003DAD5CF0EFD74FFDF1 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt.lproj; path = "Objective-C/TOCropViewController/Resources/pt.lproj"; sourceTree = "<group>"; };
+		76922D3C781E003DAD5CF0EFD74FFDF1 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pt.lproj; path = "Objective-C/TOCropViewController/Resources/pt.lproj"; sourceTree = "<group>"; };
 		76F5A0DBC15A602E09475434CD4B9DBF /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
-		7862C607B7BE0510C2D65193F9B4B4F9 /* TOCropViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TOCropViewController.framework; path = TOCropViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7862C607B7BE0510C2D65193F9B4B4F9 /* TOCropViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TOCropViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7968D94AC11514696F3C05D4600CBCF3 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
-		7DF0E4EE359727686BC6B4BDE52830D2 /* sk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = sk.lproj; path = "Objective-C/TOCropViewController/Resources/sk.lproj"; sourceTree = "<group>"; };
+		7DF0E4EE359727686BC6B4BDE52830D2 /* sk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = sk.lproj; path = "Objective-C/TOCropViewController/Resources/sk.lproj"; sourceTree = "<group>"; };
 		7E50C45D9EDE45E59ADB0B4785E213F2 /* TOCropViewConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewConstants.h; path = "Objective-C/TOCropViewController/Constants/TOCropViewConstants.h"; sourceTree = "<group>"; };
 		7EF7AC4FC392A02004D2982C6B0D0E12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		80E11863F28F061379C875BCEDF76FF4 /* TOCropView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropView.h; path = "Objective-C/TOCropViewController/Views/TOCropView.h"; sourceTree = "<group>"; };
-		8272E67C7F02633B511DAE3E3410017F /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = nl.lproj; path = "Objective-C/TOCropViewController/Resources/nl.lproj"; sourceTree = "<group>"; };
+		8272E67C7F02633B511DAE3E3410017F /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = nl.lproj; path = "Objective-C/TOCropViewController/Resources/nl.lproj"; sourceTree = "<group>"; };
 		85C7848991C1124F5391E9520A00F7A6 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
 		88DC5BE5472DD737A4C05CD26026168B /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
-		8B1711900F52987AC3FFA79ED9D08921 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.lproj; path = "Objective-C/TOCropViewController/Resources/ko.lproj"; sourceTree = "<group>"; };
+		8B1711900F52987AC3FFA79ED9D08921 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ko.lproj; path = "Objective-C/TOCropViewController/Resources/ko.lproj"; sourceTree = "<group>"; };
 		8BD08847E35312CD2C0468F25C6B0B88 /* TOCropViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewController.m; path = "Objective-C/TOCropViewController/TOCropViewController.m"; sourceTree = "<group>"; };
 		91BCEBFAC6AE5737847B462144475DFB /* TOCropViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TOCropViewController-umbrella.h"; sourceTree = "<group>"; };
-		92D768EB8FB1AA77E079CD5BD41EDDF3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		979486118B3E90C08386079D57962701 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92D768EB8FB1AA77E079CD5BD41EDDF3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		979486118B3E90C08386079D57962701 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9848C29F74265E74C26D473E075AF4F6 /* SYCustomCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SYCustomCamera.debug.xcconfig; sourceTree = "<group>"; };
 		98AD4B64185607E53D4B6C8EDB272DF3 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
 		9ABBAA89D08707968BA3E05BC72D058A /* TOCropView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropView.m; path = "Objective-C/TOCropViewController/Views/TOCropView.m"; sourceTree = "<group>"; };
 		9C0E9C621347BD14FED025FD622BDEAE /* TOCropViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TOCropViewController.debug.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E77964DE8ED6365A3339FE635DE81FE /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = cs.lproj; path = "Objective-C/TOCropViewController/Resources/cs.lproj"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E77964DE8ED6365A3339FE635DE81FE /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = cs.lproj; path = "Objective-C/TOCropViewController/Resources/cs.lproj"; sourceTree = "<group>"; };
 		A1C1D4B8F29E54AFED04444C048E0A90 /* UIImage+CropRotate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+CropRotate.h"; path = "Objective-C/TOCropViewController/Categories/UIImage+CropRotate.h"; sourceTree = "<group>"; };
-		A77029FEF2630CAA3BDCCBF224B7815C /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ar.lproj; path = "Objective-C/TOCropViewController/Resources/ar.lproj"; sourceTree = "<group>"; };
+		A77029FEF2630CAA3BDCCBF224B7815C /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ar.lproj; path = "Objective-C/TOCropViewController/Resources/ar.lproj"; sourceTree = "<group>"; };
 		A89CE03A90F1873C60BDA47CA2344437 /* TOCropViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TOCropViewController.modulemap; sourceTree = "<group>"; };
 		A8BE80C607CF1C3E6B55B06A2CC1189E /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
-		A92C0E63A165D14A41595733A57728DE /* fa-IR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "fa-IR.lproj"; path = "Objective-C/TOCropViewController/Resources/fa-IR.lproj"; sourceTree = "<group>"; };
+		A92C0E63A165D14A41595733A57728DE /* fa-IR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "fa-IR.lproj"; path = "Objective-C/TOCropViewController/Resources/fa-IR.lproj"; sourceTree = "<group>"; };
 		AAC74FA239B63ABDE47BBAB8B9FFD292 /* Pods-SYCustomCamera_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYCustomCamera_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B71EB436E69FC706984689FACB1D85F9 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		B919CB18F154EE1E1AD11F96F07118EE /* CropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CropViewController.h; sourceTree = "<group>"; };
+		BCE5C7E0256C96690030F364 /* SYCustomCameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYCustomCameraView.swift; sourceTree = "<group>"; };
 		BD9B0162B52F8F4AE0361FC3F3A53F50 /* SYCustomCamera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SYCustomCamera-umbrella.h"; sourceTree = "<group>"; };
 		BF11EAA074E92374045C7B77398F935E /* Pods-SYCustomCamera_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYCustomCamera_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C24712B1172D28023050E53F1CA2335F /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
@@ -271,14 +272,13 @@
 		C69C0D9DD42A50BBF47C178F449C5212 /* SYCustomCamera-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SYCustomCamera-Info.plist"; sourceTree = "<group>"; };
 		C7571668FFE6ADC376D86E3380EEC51E /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
 		C9100D0C0DDD55BE2F188584742142A7 /* TOCropViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TOCropViewController-dummy.m"; sourceTree = "<group>"; };
-		CCF7DC82FAC59D8B5F23F7763EC1FFDF /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pl.lproj; path = "Objective-C/TOCropViewController/Resources/pl.lproj"; sourceTree = "<group>"; };
+		CCF7DC82FAC59D8B5F23F7763EC1FFDF /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pl.lproj; path = "Objective-C/TOCropViewController/Resources/pl.lproj"; sourceTree = "<group>"; };
 		CD4C33D7DBBD37CA583691F60D00B05D /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
-		CFBA8D45267DDBE793833DCF48E6EA8A /* da-DK.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "da-DK.lproj"; path = "Objective-C/TOCropViewController/Resources/da-DK.lproj"; sourceTree = "<group>"; };
-		D2BE10E1AD00AE773A2E2EA168D89DA0 /* SYCustomCameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SYCustomCameraView.swift; sourceTree = "<group>"; };
+		CFBA8D45267DDBE793833DCF48E6EA8A /* da-DK.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "da-DK.lproj"; path = "Objective-C/TOCropViewController/Resources/da-DK.lproj"; sourceTree = "<group>"; };
 		D302DF40BF72518BFB3C4C63C34828EC /* Pods-SYCustomCamera_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SYCustomCamera_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		D9767385277752CB03B3602AD53C0622 /* TOCropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewController.h; path = "Objective-C/TOCropViewController/TOCropViewController.h"; sourceTree = "<group>"; };
 		E25AF4C1E5B14088159D919C5E6C84CF /* UIImage+CropRotate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CropRotate.m"; path = "Objective-C/TOCropViewController/Categories/UIImage+CropRotate.m"; sourceTree = "<group>"; };
-		E319C1D4C87970741BD0C1B223CE1BB5 /* fi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fi.lproj; path = "Objective-C/TOCropViewController/Resources/fi.lproj"; sourceTree = "<group>"; };
+		E319C1D4C87970741BD0C1B223CE1BB5 /* fi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fi.lproj; path = "Objective-C/TOCropViewController/Resources/fi.lproj"; sourceTree = "<group>"; };
 		E32A465EE2AAA0FC0F2A7EFC638CA51F /* SYCustomCameraImageShowItemCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = SYCustomCameraImageShowItemCell.xib; sourceTree = "<group>"; };
 		E3F0018D6E5305E2D8B06A0CF2232869 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = SYCustomCamera/Classes/Custom/Config.swift; sourceTree = "<group>"; };
 		E47CCBAD3982DA694E15A696F2B9A342 /* SYCustomCameraImageShowItemCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SYCustomCameraImageShowItemCell.swift; sourceTree = "<group>"; };
@@ -290,11 +290,11 @@
 		EAEEFF96C6F5DA53A49EB01494F9C1AA /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
 		EC12F97B7503C9B518E3CCC9886AF566 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
 		F4298A146CC8DBFA8C13B627DD483B21 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
-		F9677BA3EBAB47EE6A047073FD00BDF6 /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = id.lproj; path = "Objective-C/TOCropViewController/Resources/id.lproj"; sourceTree = "<group>"; };
+		F9677BA3EBAB47EE6A047073FD00BDF6 /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = id.lproj; path = "Objective-C/TOCropViewController/Resources/id.lproj"; sourceTree = "<group>"; };
 		FA2BEA01454D987E33CBC4F77751C525 /* TOCropToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropToolbar.m; path = "Objective-C/TOCropViewController/Views/TOCropToolbar.m"; sourceTree = "<group>"; };
 		FCFD6828D5F4D957D56DB4503DDAC660 /* TOCropScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropScrollView.m; path = "Objective-C/TOCropViewController/Views/TOCropScrollView.m"; sourceTree = "<group>"; };
-		FE1E812071397E31AE21DFF368B781B1 /* TOCropViewControllerBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TOCropViewControllerBundle.bundle; path = "TOCropViewController-TOCropViewControllerBundle.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEA0556D7E4129A685ED4870CB848889 /* pt-BR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "pt-BR.lproj"; path = "Objective-C/TOCropViewController/Resources/pt-BR.lproj"; sourceTree = "<group>"; };
+		FE1E812071397E31AE21DFF368B781B1 /* TOCropViewControllerBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOCropViewControllerBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEA0556D7E4129A685ED4870CB848889 /* pt-BR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "pt-BR.lproj"; path = "Objective-C/TOCropViewController/Resources/pt-BR.lproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -407,16 +407,15 @@
 				7177ED6F3B7E062C37A22BA000FA5F36 /* UILayoutSupport+Extensions.swift */,
 				C714196F2B0F96275607DF5F5911ACED /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
 		594D2C080C1643F85D47E89F765F36E6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BCE5C7E0256C96690030F364 /* SYCustomCameraView.swift */,
 				E47CCBAD3982DA694E15A696F2B9A342 /* SYCustomCameraImageShowItemCell.swift */,
 				E32A465EE2AAA0FC0F2A7EFC638CA51F /* SYCustomCameraImageShowItemCell.xib */,
-				D2BE10E1AD00AE773A2E2EA168D89DA0 /* SYCustomCameraView.swift */,
 				619E975EF8739633234F98909CF11E11 /* SYImageBrowserView.swift */,
 			);
 			name = View;
@@ -502,7 +501,6 @@
 				6CC3CDED7E78417A6CB002DC87B59F24 /* Resources */,
 				9C82EBD9544D107853FBFF20DAAB58EF /* Support Files */,
 			);
-			name = TOCropViewController;
 			path = TOCropViewController;
 			sourceTree = "<group>";
 		};
@@ -561,7 +559,6 @@
 				B919CB18F154EE1E1AD11F96F07118EE /* CropViewController.h */,
 				003ED8A56BB6D8E4E46B60312FFE1367 /* CropViewController.swift */,
 			);
-			name = CropViewController;
 			path = CropViewController;
 			sourceTree = "<group>";
 		};
@@ -958,13 +955,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCE5C7E1256C96690030F364 /* SYCustomCameraView.swift in Sources */,
 				42A1F37498FD44A6049BDAFF6646A4DE /* Config.swift in Sources */,
 				0390A1F1BFBF016026DBC10CF0DAD0CA /* CropViewController.swift in Sources */,
 				DBFD30466F30E296470F317DEB12C0BE /* SYCustomCamera-dummy.m in Sources */,
 				30F30E6A41363063F26667CED83B6A42 /* SYCustomCameraImageShowItemCell.swift in Sources */,
 				93534D130B51C6EC2E644F610883729B /* SYCustomCameraImageShowItemCell.xib in Sources */,
 				78497E59DC783DCCD16D4554DB644895 /* SYCustomCameraModel.swift in Sources */,
-				5B2551225F25BE449F4BE0D4D9DADDA4 /* SYCustomCameraView.swift in Sources */,
 				4D84DBFFB69603EE1F678CDF180DA7ED /* SYCustomShowBigImageViewController.swift in Sources */,
 				7A77EA064011A7B9BE3D7265EE674FE6 /* SYImageBrowserView.swift in Sources */,
 				9CFB919800D77388E761686D8C937BF9 /* UIViewExtension.swift in Sources */,
@@ -1124,8 +1121,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

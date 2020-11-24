@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SYCustomCamera'
-  s.version          = '0.1.1'
-  s.summary          = 'SYCustomCamera is demo'
+  s.version          = '0.1.3'
+  s.summary          = 'SYCustomCamera is CustomCamera'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -30,11 +30,18 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'SYCustomCamera/Classes/Custom/*.{swift}','SYCustomCamera/Classes/Custom/View/*.{h,swift}','SYCustomCamera/Classes/Custom/Model/*.{swift}','SYCustomCamera/Classes/Custom/Crop/CropViewController/*.{h,swift}'
-  s.resource = "SYCustomCamera/Classes/Custom/View/SYCustomCameraImageShowItemCell.xib"
-  # s.resource_bundles = {
-  #   'SYCustomCamera' => ['SYCustomCamera/Assets/*.png']
-  # }
+  s.source_files = 'SYCustomCamera/Classes/**/*'
+  s.subspec 'View' do |ss|
+        ss.source_files = 'SYCustomCamera/Classes/View/*.{h,m,swift}'
+  end
+#
+#    s.subspec 'ZXUIView' do |ss|
+#        ss.source_files = 'ZXTestOCUIKit/Classes/ZXUIView/*.{h,m}'
+#    end
+  s.resource = "SYCustomCamera/Classes/**/**/*.{xib}"
+   s.resource_bundles = {
+     'SYCustomCamera' => ['SYCustomCamera/Assets/*.png']
+   }
 
   #s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
