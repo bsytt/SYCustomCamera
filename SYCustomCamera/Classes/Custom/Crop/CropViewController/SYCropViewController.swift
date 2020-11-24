@@ -27,23 +27,23 @@
 /**
  An enum containing all of the aspect ratio presets that this view controller supports
  */
-public typealias CropViewControllerAspectRatioPreset = TOCropViewControllerAspectRatioPreset
+public typealias SYCropViewControllerAspectRatioPreset = TOCropViewControllerAspectRatioPreset
 
 /**
  An enum denoting whether the control tool bar is drawn at the top, or the bottom of the screen in portrait mode
  */
-public typealias CropViewControllerToolbarPosition = TOCropViewControllerToolbarPosition
+public typealias SYCropViewControllerToolbarPosition = TOCropViewControllerToolbarPosition
 
 /**
  The type of cropping style for this view controller (ie a square or a circle cropping region)
  */
-public typealias CropViewCroppingStyle = TOCropViewCroppingStyle
+public typealias SYCropViewCroppingStyle = TOCropViewCroppingStyle
 
 ///------------------------------------------------
 /// @name Delegate
 ///------------------------------------------------
 
-@objc public protocol CropViewControllerDelegate: NSObjectProtocol {
+@objc public protocol SYCropViewControllerDelegate: NSObjectProtocol {
     /**
      Called when the user has committed the crop action, and provides
      just the cropping rectangle.
@@ -51,7 +51,7 @@ public typealias CropViewCroppingStyle = TOCropViewCroppingStyle
      @param cropRect A rectangle indicating the crop region of the image the user chose (In the original image's local co-ordinate space)
      @param angle The angle of the image when it was cropped
      */
-    @objc optional func cropViewController(_ cropViewController: CropViewController, didCropImageToRect rect: CGRect, angle: Int)
+    @objc optional func sy_cropViewController(_ cropViewController: SYCropViewController, didCropImageToRect rect: CGRect, angle: Int)
     
     /**
      Called when the user has committed the crop action, and provides
@@ -61,7 +61,7 @@ public typealias CropViewCroppingStyle = TOCropViewCroppingStyle
      @param cropRect A rectangle indicating the crop region of the image the user chose (In the original image's local co-ordinate space)
      @param angle The angle of the image when it was cropped
      */
-    @objc optional func cropViewController(_ cropViewController: CropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int)
+    @objc optional func sy_cropViewController(_ cropViewController: SYCropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int)
     
     /**
      If the cropping style is set to circular, implementing this delegate will return a circle-cropped version of the selected
@@ -71,7 +71,7 @@ public typealias CropViewCroppingStyle = TOCropViewCroppingStyle
      @param cropRect A rectangle indicating the crop region of the image the user chose (In the original image's local co-ordinate space)
      @param angle The angle of the image when it was cropped
      */
-    @objc optional func cropViewController(_ cropViewController: CropViewController, didCropToCircularImage image: UIImage, withRect cropRect: CGRect, angle: Int)
+    @objc optional func sy_cropViewController(_ cropViewController: SYCropViewController, didCropToCircularImage image: UIImage, withRect cropRect: CGRect, angle: Int)
     
     /**
      If implemented, when the user hits cancel, or completes a
@@ -81,14 +81,14 @@ public typealias CropViewCroppingStyle = TOCropViewCroppingStyle
      @param cancelled Whether a cropping action was actually performed, or if the user explicitly hit 'Cancel'
      
      */
-    @objc optional func cropViewController(_ cropViewController: CropViewController, didFinishCancelled cancelled: Bool)
+    @objc optional func sy_cropViewController(_ cropViewController: SYCropViewController, didFinishCancelled cancelled: Bool)
 }
 
 ///------------------------------------------------
 /// @name Class
 ///------------------------------------------------
 
-open class CropViewController: UIViewController, TOCropViewControllerDelegate {
+open class SYCropViewController: UIViewController, TOCropViewControllerDelegate {
     
     /**
      The original, uncropped image that was passed to this controller.
@@ -99,7 +99,7 @@ open class CropViewController: UIViewController, TOCropViewControllerDelegate {
      The view controller's delegate that will receive the resulting
      cropped image, as well as crop information.
     */
-    public weak var delegate: CropViewControllerDelegate? {
+    public weak var delegate: SYCropViewControllerDelegate? {
         didSet { self.setUpDelegateHandlers() }
     }
     
@@ -147,14 +147,14 @@ open class CropViewController: UIViewController, TOCropViewControllerDelegate {
     /**
      The cropping style of this particular crop view controller
      */
-    public var croppingStyle: CropViewCroppingStyle {
+    public var croppingStyle: SYCropViewCroppingStyle {
         return toCropViewController.croppingStyle
     }
     
     /**
       A choice from one of the pre-defined aspect ratio presets
     */
-    public var aspectRatioPreset: CropViewControllerAspectRatioPreset {
+    public var aspectRatioPreset: SYCropViewControllerAspectRatioPreset {
         set { toCropViewController.aspectRatioPreset = newValue }
         get { return toCropViewController.aspectRatioPreset }
     }
@@ -215,7 +215,7 @@ open class CropViewController: UIViewController, TOCropViewControllerDelegate {
     /**
      The position of the Toolbar the default value is `TOCropViewControllerToolbarPositionBottom`.
      */
-    public var toolbarPosition: CropViewControllerToolbarPosition {
+    public var toolbarPosition: SYCropViewControllerToolbarPosition {
         set { toCropViewController.toolbarPosition = newValue }
         get { return toCropViewController.toolbarPosition }
     }
@@ -458,7 +458,7 @@ open class CropViewController: UIViewController, TOCropViewControllerDelegate {
      @param style The cropping style that will be used with this view controller (eg, rectangular, or circular)
      @param image The image that will be cropped
      */
-    public init(croppingStyle: CropViewCroppingStyle, image: UIImage) {
+    public init(croppingStyle: SYCropViewCroppingStyle, image: UIImage) {
         self.toCropViewController = TOCropViewController(croppingStyle: croppingStyle, image: image)
         super.init(nibName: nil, bundle: nil)
         setUpCropController()
@@ -497,7 +497,7 @@ open class CropViewController: UIViewController, TOCropViewControllerDelegate {
     @param aspectRatioPreset The aspect ratio preset
     @param animated Whether the transition to the aspect ratio is animated
     */
-    public func setAspectRatioPreset(_ aspectRatio: CropViewControllerAspectRatioPreset, animated: Bool) {
+    public func setAspectRatioPreset(_ aspectRatio: SYCropViewControllerAspectRatioPreset, animated: Bool) {
         toCropViewController.setAspectRatioPresent(aspectRatio, animated: animated)
     }
     
@@ -579,7 +579,7 @@ open class CropViewController: UIViewController, TOCropViewControllerDelegate {
     }
 }
 
-extension CropViewController {
+extension SYCropViewController {
     fileprivate func setUpCropController() {
         modalPresentationStyle = .fullScreen
         addChild(toCropViewController)
@@ -597,31 +597,31 @@ extension CropViewController {
             return
         }
         
-        if delegate.responds(to: #selector(CropViewControllerDelegate.cropViewController(_:didCropImageToRect:angle:))) {
+        if delegate.responds(to: #selector(SYCropViewControllerDelegate.sy_cropViewController(_:didCropImageToRect:angle:))) {
             self.onDidCropImageToRect = {[weak self] rect, angle in
                 guard let strongSelf = self else { return }
-                delegate.cropViewController!(strongSelf, didCropImageToRect: rect, angle: angle)
+                delegate.sy_cropViewController!(strongSelf, didCropImageToRect: rect, angle: angle)
             }
         }
         
-        if delegate.responds(to: #selector(CropViewControllerDelegate.cropViewController(_:didCropToImage:withRect:angle:))) {
+        if delegate.responds(to: #selector(SYCropViewControllerDelegate.sy_cropViewController(_:didCropToImage:withRect:angle:))) {
             self.onDidCropToRect = {[weak self] image, rect, angle in
                 guard let strongSelf = self else { return }
-                delegate.cropViewController!(strongSelf, didCropToImage: image, withRect: rect, angle: angle)
+                delegate.sy_cropViewController!(strongSelf, didCropToImage: image, withRect: rect, angle: angle)
             }
         }
         
-        if delegate.responds(to: #selector(CropViewControllerDelegate.cropViewController(_:didCropToCircularImage:withRect:angle:))) {
+        if delegate.responds(to: #selector(SYCropViewControllerDelegate.sy_cropViewController(_:didCropToCircularImage:withRect:angle:))) {
             self.onDidCropToCircleImage = {[weak self] image, rect, angle in
                 guard let strongSelf = self else { return }
-                delegate.cropViewController!(strongSelf, didCropToCircularImage: image, withRect: rect, angle: angle)
+                delegate.sy_cropViewController!(strongSelf, didCropToCircularImage: image, withRect: rect, angle: angle)
             }
         }
         
-        if delegate.responds(to: #selector(CropViewControllerDelegate.cropViewController(_:didFinishCancelled:))) {
+        if delegate.responds(to: #selector(SYCropViewControllerDelegate.sy_cropViewController(_:didFinishCancelled:))) {
             self.onDidFinishCancelled = {[weak self] finished in
                 guard let strongSelf = self else { return }
-                delegate.cropViewController!(strongSelf, didFinishCancelled: finished)
+                delegate.sy_cropViewController!(strongSelf, didFinishCancelled: finished)
             }
         }
     }

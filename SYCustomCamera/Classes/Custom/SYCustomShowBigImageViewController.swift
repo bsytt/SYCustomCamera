@@ -58,7 +58,7 @@ class SYCustomShowBigImageViewController: UIViewController {
    
     @objc func editBtnClick() {
         let image = dataSource[scrollView.indexImage]
-        let cropController = CropViewController(croppingStyle: .default, image: image)
+        let cropController = SYCropViewController(croppingStyle: .default, image: image)
         cropController.delegate = self
         self.present(cropController, animated: true, completion: nil)
     }
@@ -109,17 +109,17 @@ class SYCustomShowBigImageViewController: UIViewController {
     }()
 }
 
-extension SYCustomShowBigImageViewController : CropViewControllerDelegate {
+extension SYCustomShowBigImageViewController : SYCropViewControllerDelegate {
 
-    public func cropViewController(_ cropViewController: CropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
+    public func sy_cropViewController(_ cropViewController: SYCropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
         updateImageViewWithImage(image, fromCropViewController: cropViewController)
     }
     
-    public func cropViewController(_ cropViewController: CropViewController, didCropToCircularImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
+    public func sy_cropViewController(_ cropViewController: SYCropViewController, didCropToCircularImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
         updateImageViewWithImage(image, fromCropViewController: cropViewController)
     }
     
-    public func updateImageViewWithImage(_ image: UIImage, fromCropViewController cropViewController: CropViewController) {
+    public func updateImageViewWithImage(_ image: UIImage, fromCropViewController cropViewController: SYCropViewController) {
         self.dataSource[scrollView.indexImage] = image
         self.index = scrollView.indexImage
         cropViewController.dismissAnimatedFrom(self, withCroppedImage: image,toView: UIImageView(frame: CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)),toFrame: CGRect.zero,setup: {},completion: {

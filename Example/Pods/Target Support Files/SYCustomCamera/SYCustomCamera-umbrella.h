@@ -10,7 +10,7 @@
 #endif
 #endif
 
-#import "CropViewController.h"
+#import "SYCropViewController.h"
 
 FOUNDATION_EXPORT double SYCustomCameraVersionNumber;
 FOUNDATION_EXPORT const unsigned char SYCustomCameraVersionString[];

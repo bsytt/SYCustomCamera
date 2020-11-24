@@ -31,18 +31,14 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'SYCustomCamera/Classes/**/*.{swift}'
-#  s.source_files = 'SYCustomCamera/Classes/**/**/*.{h,m,swift}'
 
   s.subspec 'View' do |ss|
       ss.source_files = 'SYCustomCamera/Classes/Custom/View/*.{h,m,swift}'
   end
-  s.subspec 'Model' do |ss|
-      ss.source_files = 'SYCustomCamera/Classes/Custom/Model/*.{h,m,swift}'
-  end
+
   s.subspec 'CropViewController' do |ss|
       ss.source_files = 'SYCustomCamera/Classes/Custom/Crop/CropViewController/*.{h,m,swift}'
   end
-  s.resource = "SYCustomCamera/Classes/**/**/*.{xib}"
    s.resource_bundles = {
      'SYCustomCamera' => ['SYCustomCamera/Assets/*.png']
    }

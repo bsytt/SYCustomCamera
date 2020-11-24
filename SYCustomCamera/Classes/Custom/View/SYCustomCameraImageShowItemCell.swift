@@ -10,19 +10,6 @@ import UIKit
 
 class SYCustomCameraImageShowItemCell: UICollectionViewCell {
 
-    var model : SYCustomCameraModel?{
-        didSet {
-            guard let model = model else {
-                return
-            }
-            if let image = model.image {
-                imgV.image = image
-            }
-//            if let imageUrl = model.imageUrl {
-//                imgV
-//            }
-        }
-    }
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.addSubview(imgV)
